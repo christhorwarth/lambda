@@ -11,11 +11,15 @@ module.exports.app = function(settings, exports) {
 	app.instance = require('./lib/random').string(6);
 	app.router = require('./lib/router');
 
-	var args = require('minimist')(process.argv.slice(2));
-	if(args.deploy)
-		require('./lib/deploy').run();
-	else
-		exports.handler = app.router.run;
+	var ret = require('./lib/flow').series();
 
-	return app;
+	var args = require('minimist')(process.argv.slice(2));
+	if(args.deploy) {
+		require('./lib/deploy').run();
+		return ret;
+	}
+
+	exports.handler = app.router.run;
+	require('async').nextTick(ret.run);
+	return ret;
 };
