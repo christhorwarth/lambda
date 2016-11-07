@@ -1,5 +1,5 @@
 
-module.exports.app = function(settings) {
+module.exports.app = function(settings, exports) {
 	if(global._app)
 		return global._app;
 
@@ -10,7 +10,12 @@ module.exports.app = function(settings) {
 	app.loader = require('./lib/loader');
 	app.instance = require('./lib/random').string(6);
 	app.router = require('./lib/router');
-	app.deploy = require('./lib/deploy').run;
+
+	var args = require('minimist')(process.argv.slice(2));
+	if(args.deploy)
+		require('./lib/deploy').run();
+	else
+		exports.handler = app.router.run;
 
 	return app;
 };
