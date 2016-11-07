@@ -12,6 +12,9 @@ module.exports.app = function(settings, exports) {
 	app.router = require('./lib/router');
 
 	var ret = require('./lib/flow').series();
+	ret.step('app', function(res, next) {
+		next(null, app);
+	});
 
 	var args = require('minimist')(process.argv.slice(2));
 	if(args.deploy) {
