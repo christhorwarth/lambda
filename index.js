@@ -8,6 +8,7 @@ module.exports.app = function(settings, exports) {
 	app.settings = app.setting = require('./lib/settings')(settings);
 	app.log = require('./lib/log');
 	app.loader = require('./lib/loader');
+	app.register = app.loader.register;
 	app.instance = require('./lib/random').string(6);
 	app.router = require('./lib/router');
 

@@ -1,21 +1,45 @@
 {
-  "name": "lambda",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "_args": [
+    [
+      "lambda@git+ssh://git@github.com/christhorwarth/lambda.git",
+      "/Users/thor/work/t3/api"
+    ]
+  ],
+  "_from": "git+ssh://git@github.com/christhorwarth/lambda.git",
+  "_id": "lambda@1.0.0",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/lambda",
+  "_phantomChildren": {},
+  "_requested": {
+    "hosted": {
+      "directUrl": "https://raw.githubusercontent.com/christhorwarth/lambda/master/package.json",
+      "gitUrl": "git://github.com/christhorwarth/lambda.git",
+      "httpsUrl": "git+https://github.com/christhorwarth/lambda.git",
+      "shortcut": "github:christhorwarth/lambda",
+      "ssh": "git@github.com:christhorwarth/lambda.git",
+      "sshUrl": "git+ssh://git@github.com/christhorwarth/lambda.git",
+      "type": "github"
+    },
+    "name": "lambda",
+    "raw": "lambda@git+ssh://git@github.com/christhorwarth/lambda.git",
+    "rawSpec": "git+ssh://git@github.com/christhorwarth/lambda.git",
+    "scope": null,
+    "spec": "git+ssh://git@github.com/christhorwarth/lambda.git",
+    "type": "hosted"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/christhorwarth/lambda.git"
-  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "git+ssh://git@github.com/christhorwarth/lambda.git#90b8dea3b1b4c359a87ad8909c5c1d5c390815ec",
+  "_shasum": "6bc2a163dc5597bd04be6688f986ff686f6efd99",
+  "_shrinkwrap": null,
+  "_spec": "lambda@git+ssh://git@github.com/christhorwarth/lambda.git",
+  "_where": "/Users/thor/work/t3/api",
   "author": "",
-  "license": "ISC",
   "bugs": {
     "url": "https://github.com/christhorwarth/lambda/issues"
   },
-  "homepage": "https://github.com/christhorwarth/lambda#readme",
   "dependencies": {
     "archiver": "^1.2.0",
     "async": "^2.1.2",
@@ -28,5 +52,21 @@
     "node-uuid": "^1.4.7",
     "request": "^2.78.0",
     "s3-policy": "^0.2.0"
-  }
+  },
+  "devDependencies": {},
+  "gitHead": "90b8dea3b1b4c359a87ad8909c5c1d5c390815ec",
+  "homepage": "https://github.com/christhorwarth/lambda#readme",
+  "license": "ISC",
+  "main": "index.js",
+  "name": "lambda",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/christhorwarth/lambda.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "1.0.0"
 }
