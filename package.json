@@ -50,6 +50,7 @@
     "minimist": "^1.2.0",
     "moment": "^2.15.2",
     "node-uuid": "^1.4.7",
+    "pug": "^2.0.0-beta6",
     "request": "^2.78.0",
     "s3-policy": "^0.2.0"
   },
