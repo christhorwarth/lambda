@@ -3,6 +3,10 @@
     [
       "lambda@git+ssh://git@github.com/christhorwarth/lambda.git",
       "/Users/thor/work/t3/api"
+    ],
+    [
+      "lambda@git+ssh://git@github.com/christhorwarth/lambda.git",
+      "/Users/thor/work/t3/api"
     ]
   ],
   "_from": "git+ssh://git@github.com/christhorwarth/lambda.git",
@@ -31,8 +35,8 @@
   "_requiredBy": [
     "/"
   ],
-  "_resolved": "git+ssh://git@github.com/christhorwarth/lambda.git#90b8dea3b1b4c359a87ad8909c5c1d5c390815ec",
-  "_shasum": "6bc2a163dc5597bd04be6688f986ff686f6efd99",
+  "_resolved": "git+ssh://git@github.com/christhorwarth/lambda.git#8c4f479e07f8a3863ee612b6b1b472a166a27657",
+  "_shasum": "dba60f204bf6f3e10e4f910c675a71ca073cefdb",
   "_shrinkwrap": null,
   "_spec": "lambda@git+ssh://git@github.com/christhorwarth/lambda.git",
   "_where": "/Users/thor/work/t3/api",
@@ -45,6 +49,8 @@
     "async": "^2.1.2",
     "aws-sdk": "^2.6.15",
     "bcryptjs": "^2.3.0",
+    "file-type": "^3.9.0",
+    "gm": "^1.23.0",
     "lodash": "^4.16.6",
     "mime": "^1.3.4",
     "minimist": "^1.2.0",
